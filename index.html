@@ -66,7 +66,7 @@
 <body>
     <div class="container">
         <h1>ChikaChika Timer — Privacy Policy</h1>
-        <p class="subtitle">Last updated: March 8, 2026</p>
+        <p class="subtitle">Last updated: March 18, 2026</p>
         <div class="highlight">
             <p><strong>Summary:</strong> ChikaChika Timer does not collect, store, or transmit any personal data to external servers. All app data is stored locally on your device only.</p>
         </div>
@@ -89,7 +89,7 @@
             <li>Device identifiers or advertising IDs</li>
             <li>Usage analytics or behavioral tracking data</li>
             <li>Photos, contacts, or any other personal files</li>
-            <li>Health data or biometric information</li>
+            <li>Health data or biometric identifiers (see Section 6 for details on camera and face data)</li>
         </ul>
         <h2>4. Third-Party Services</h2>
         <p>ChikaChika Timer does not integrate with any third-party services, including:</p>
@@ -102,14 +102,20 @@
         </ul>
         <h2>5. Children's Privacy</h2>
         <p>ChikaChika Timer is designed to be safe and enjoyable for users of all ages, including children. We do not knowingly collect personal information from anyone, including children under the age of 13. Since no personal data is collected or transmitted, no parental consent mechanism is required.</p>
-        <h2>6. Camera Usage (Future Feature)</h2>
-        <p>A future version of ChikaChika Timer may include a mirror mode that uses the device's front-facing camera. If implemented:</p>
-        <ul>
-            <li>The camera feed will be displayed in real-time on your screen only</li>
-            <li>No photos or videos will be captured, stored, or transmitted unless you explicitly choose to take a photo</li>
-            <li>Any photos taken will be stored locally on your device only</li>
-            <li>Camera access requires your explicit permission and can be revoked at any time through your device settings</li>
-        </ul>
+        <h2>6. Camera and Face Data</h2>
+        <p>ChikaChika Timer includes a "Mirror Mode" feature that uses the device's front-facing camera to display real-time augmented reality (AR) effects while the child brushes their teeth. This section explains how camera and face data are handled.</p>
+        <h3 style="font-size:17px; margin-top:20px; margin-bottom:8px;">6.1 What Face Data We Process</h3>
+        <p>When Mirror Mode is active, the app uses Apple's on-device face detection APIs (via the device camera) to detect the position and basic geometry of the user's face in real-time. This includes approximate face bounding box coordinates and facial landmark positions (e.g., eyes, nose, mouth) needed to position AR effects on the screen.</p>
+        <h3 style="font-size:17px; margin-top:20px; margin-bottom:8px;">6.2 How Face Data Is Used</h3>
+        <p>Face data is used solely and exclusively to render AR effects (such as hats, glasses, animal ears, and other fun overlays) on the live camera preview in real-time. The purpose is to encourage children to watch themselves while brushing, which helps them brush longer and more thoroughly.</p>
+        <h3 style="font-size:17px; margin-top:20px; margin-bottom:8px;">6.3 Face Data Storage and Retention</h3>
+        <p>Face data is <strong>processed entirely on-device in real-time and is never stored</strong>. Each video frame is processed, used to position the AR effect, and then immediately discarded. No face data is written to disk, saved to any file, or persisted in any form. When the user leaves Mirror Mode or closes the app, all face data processing stops immediately and no face data remains.</p>
+        <h3 style="font-size:17px; margin-top:20px; margin-bottom:8px;">6.4 Face Data Sharing</h3>
+        <p>Face data is <strong>never transmitted, shared, or disclosed to any third party</strong>. All face detection processing occurs locally on the device using Apple's built-in frameworks. No face data is sent to any server, cloud service, analytics provider, or any other external party. The developer does not have access to any face data at any time.</p>
+        <h3 style="font-size:17px; margin-top:20px; margin-bottom:8px;">6.5 Camera Permissions</h3>
+        <p>Camera access requires the user's explicit permission through the standard iOS permission dialog. Camera access can be revoked at any time through the device's Settings. The app functions normally without camera access — Mirror Mode simply will not be available.</p>
+        <h3 style="font-size:17px; margin-top:20px; margin-bottom:8px;">6.6 No Facial Recognition or Identification</h3>
+        <p>ChikaChika Timer does <strong>not</strong> perform facial recognition, facial identification, or any form of biometric identification. The app does not create face profiles, face templates, or faceprints. The face detection is used only to determine where to place visual AR effects on the screen.</p>
         <h2>7. Data Sharing</h2>
         <p>We do not share, sell, rent, or trade any user data with any third party. Since all data is stored locally on your device, there is no data on our end to share.</p>
         <h2>8. Data Deletion</h2>
